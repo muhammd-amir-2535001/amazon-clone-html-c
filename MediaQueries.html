@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQueries</title>
+    <style>
+      div{
+        height: 200px;
+        width: 200px;
+        background-color: rgb(14, 13, 13);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      @media (max-width:300px){
+        div{
+            background-color:green;
+        }
+      }
+      @media (min-width:300px) and (max-width: 400px){
+        div{
+            background-color: pink;
+        }
+      }
+      @media (min-width:400px) and (max-width: 600px){
+        div{
+            background-color:red;
+        }
+      }
+      @media (min-width:600px){
+        div{
+            background-color:blue
+        }
+      }
+    </style>
+</head>
+<body>
+   <p> 
+ <b>Q7</b>: Add a media query to implement the following: <br>
+the color of a div changes to green for viewport width less than 300px
+Practice Set 7 <br>
+the color of a div changes to pink for width between 300px & 400px <br>
+the color of a div changes to red for width between 400px & 600pxbr
+
+the color of a div changes to blue for width above 600px </p>
+    <div id="one">Box</div>
+</body>
+</html>
